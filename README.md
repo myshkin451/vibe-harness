@@ -45,9 +45,11 @@ The skill helps an agent create or refresh the lightest useful harness:
 
 ## Quick Start
 
-Copy the skill into your Codex skills folder:
+Clone the repo and copy the skill into your Codex skills folder:
 
 ```bash
+git clone https://github.com/myshkin451/vibe-harness.git
+cd vibe-harness
 mkdir -p ~/.codex/skills
 cp -R skills/vibe-harness ~/.codex/skills/vibe-harness
 ```
