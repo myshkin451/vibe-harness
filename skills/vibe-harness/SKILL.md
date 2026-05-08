@@ -94,6 +94,8 @@ Every harness needs at least one honest verification path:
 
 Never pretend a test exists. If validation is weak, make the first improvement obvious and small.
 
+When auditing or refreshing an existing harness, run the bundled `scripts/audit.py` if available. It performs static checks for core files, broken Markdown links, stale inline paths, and validation commands that are not supported by repo config. Treat its output as evidence, not as a replacement for real tests.
+
 ### 6. Add Multi-Agent Coordination Only As Needed
 
 For multi-session or multi-agent work, define:
@@ -114,7 +116,7 @@ Finish by reporting:
 
 - artifacts created or changed
 - how the user should invoke agents next time
-- what validation was run
+- what validation or harness audit was run
 - remaining gaps and the next smallest harness improvement
 
 If the task includes publishing or adoption, read `references/product-launch.md`.

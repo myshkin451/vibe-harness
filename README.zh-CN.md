@@ -101,6 +101,22 @@ Cursor、Copilot Coding Agent、Gemini CLI 或其他 coding agent 可以直接�
 skills/vibe-harness/SKILL.md
 ```
 
+## 审计一个 Repo
+
+Vibe Harness 带了一个静态 audit 脚本，所以它不只是模板包：
+
+```bash
+python3 scripts/audit.py /path/to/repo
+```
+
+它会检查核心 harness 文件是否缺失、Markdown 链接是否损坏、路径引用是否过期、progress 状态是否缺口、验证命令是否能从 repo 配置里找到明显依据。默认不会执行项目命令。
+
+可以先试一下内置示例：
+
+```bash
+python3 scripts/audit.py examples/expected-harness
+```
+
 ## 它会创建什么
 
 Vibe Harness 会帮助 agent 只创建项目当前真正需要的东西：

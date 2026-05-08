@@ -93,6 +93,7 @@ More launch copy lives in `docs/promotion-kit.md`.
 - README has English and Chinese entry points
 - README explains platform-neutral usage
 - compatibility docs exist
+- static audit command exists
 - install instructions work locally
 - `python3 scripts/validate.py` passes
 - example project plan exists
@@ -106,7 +107,7 @@ More launch copy lives in `docs/promotion-kit.md`.
 ## Early Roadmap
 
 1. Add before/after examples for frontend app, backend API, personal site, and data project.
-2. Add an audit mode that scores an existing repo's harness readiness.
-3. Add a docs drift checker that verifies linked paths and commands.
+2. Expand audit checks for more ecosystems and monorepos.
+3. Add an optional docs drift checker mode that can run declared commands safely.
 4. Publish to skill marketplaces once the first users report successful usage.
 5. Build a small eval set comparing repeated agent sessions with and without Vibe Harness.

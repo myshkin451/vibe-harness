@@ -11,7 +11,7 @@ AI coding moves fast. Vibe Harness keeps projects coherent.
 ## Short Pitch
 
 ```text
-Vibe Harness turns project plans into lightweight agent-ready repos for AI coding: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+Vibe Harness turns project plans into lightweight agent-ready repos for AI coding: AGENTS.md, docs/index.md, progress.md, verification loops, multi-agent handoff rules, and a static harness audit.
 ```
 
 ## Long Pitch
@@ -20,6 +20,8 @@ Vibe Harness turns project plans into lightweight agent-ready repos for AI codin
 AI coding is great at moving fast. It gets fragile when project intent, verification state, and handoff context live only in chat history.
 
 Vibe Harness is a portable skill that turns a project plan into a lightweight agent-ready repo: AGENTS.md as the map, docs/index.md as the context router, progress.md as the state board, plus honest verification loops and multi-agent handoff rules.
+
+It also includes a small static audit for broken links, stale path references, and unsupported validation commands.
 
 Give agents a runway, not a cage.
 ```

@@ -101,6 +101,22 @@ For Cursor, Copilot Coding Agent, Gemini CLI, or any other coding agent, point t
 skills/vibe-harness/SKILL.md
 ```
 
+## Audit A Repo
+
+Vibe Harness includes a static audit script so the project is not only a template pack:
+
+```bash
+python3 scripts/audit.py /path/to/repo
+```
+
+It checks for missing harness files, broken Markdown links, stale path references, progress-state gaps, and validation commands that are not backed by obvious repo config. It does not execute project commands by default.
+
+Try it on the included example:
+
+```bash
+python3 scripts/audit.py examples/expected-harness
+```
+
 ## What It Creates
 
 Vibe Harness helps an agent create or refresh only the artifacts the project has earned:
@@ -189,6 +205,7 @@ This project is not affiliated with Harness.io. It uses "harness" in the agent-e
 skills/vibe-harness/
 ├── SKILL.md
 ├── agents/openai.yaml
+├── scripts/audit.py
 ├── references/
 │   ├── artifact-guide.md
 │   └── product-launch.md

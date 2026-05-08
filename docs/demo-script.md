@@ -53,6 +53,14 @@ Call out:
 - `progress.md` carries state across sessions
 - unknown validation is explicit instead of faked
 
+Run:
+
+```bash
+python3 scripts/audit.py .
+```
+
+Point out that the audit checks the harness itself without pretending to run the product's tests.
+
 ### 2:15 - Explain Why It Matters
 
 Say:

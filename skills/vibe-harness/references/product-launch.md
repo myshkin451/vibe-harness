@@ -90,6 +90,7 @@ For bilingual launch copy, demo prompts, community posts, and Show HN text, see 
 - README has a compatibility section if the project should spread beyond one agent tool
 - installation works for at least Codex and Claude Code style skill folders
 - `scripts/validate.py` passes
+- bundled audit script can inspect the example harness
 - example project plan exists
 - example output exists
 - demo script exists
@@ -102,8 +103,7 @@ For bilingual launch copy, demo prompts, community posts, and Show HN text, see 
 
 Useful future additions:
 
-- scored harness audit mode
-- docs drift checker
+- richer docs drift checks
 - example packs for frontend app, backend API, personal site, data project, and browser extension
 - marketplace packaging
 - small eval set that compares repeated agent sessions with and without the harness
