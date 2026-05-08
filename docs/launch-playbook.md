@@ -1,0 +1,94 @@
+# Launch Playbook
+
+This file turns the project into something people can understand, try, and share.
+
+## Category
+
+Vibe Harness is a skill for agent-ready project initialization. It sits between a project plan and an implementation repo.
+
+It is not:
+
+- an agent framework
+- a multi-agent roleplay system
+- a giant governance template
+- a replacement for product judgment
+
+## Core Message
+
+Primary line:
+
+> Sustainable vibe coding starts with a harness.
+
+Tagline:
+
+> Give agents a runway, not a cage.
+
+One-sentence pitch:
+
+> Vibe Harness turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+
+## Why It Can Spread
+
+The pain is common:
+
+- people start projects quickly with AI coding agents
+- the third or fourth session loses the original intent
+- docs either do not exist or become bloated
+- multi-agent work creates file conflicts
+- validation is unclear
+- users do not want enterprise process for a side project
+
+The project wins if the first use feels like relief: "I can finally start future projects without re-explaining the same operating model."
+
+## Demo Story
+
+Show a small project plan becoming:
+
+- a short `AGENTS.md`
+- a `docs/index.md`
+- a `progress.md`
+- one honest validation path
+- one explicit human judgment point
+
+Keep the demo under five minutes.
+
+## Suggested GitHub Topics
+
+- `ai-agents`
+- `codex`
+- `claude-code`
+- `vibe-coding`
+- `agents-md`
+- `context-engineering`
+- `harness-engineering`
+- `agent-ready`
+- `skills`
+
+## First Launch Post
+
+```text
+Vibe coding is great at starting projects. It is bad at remembering why the project exists three sessions later.
+
+I built Vibe Harness: a skill that turns a project plan into a lightweight agent-ready repo: AGENTS.md, docs/index.md, progress.md, validation loops, and multi-agent handoff rules.
+
+Give agents a runway, not a cage.
+```
+
+## Launch Checklist
+
+- README explains the pain in the first screen
+- install instructions work locally
+- `python3 scripts/validate.py` passes
+- example project plan exists
+- example output exists
+- first release tag exists
+- GitHub topics are set
+- a short demo prompt is pinned in the README or release notes
+
+## Early Roadmap
+
+1. Add before/after examples for frontend app, backend API, personal site, and data project.
+2. Add an audit mode that scores an existing repo's harness readiness.
+3. Add a docs drift checker that verifies linked paths and commands.
+4. Publish to skill marketplaces once the first users report successful usage.
+5. Build a small eval set comparing repeated agent sessions with and without Vibe Harness.

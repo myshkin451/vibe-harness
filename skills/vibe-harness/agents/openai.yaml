@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe Harness"
+  short_description: "Turn plans into agent-ready repos"
+  default_prompt: "Use $vibe-harness to turn this project plan into a lightweight agent-ready harness."
