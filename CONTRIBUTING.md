@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping make vibe coding more sustainable.
+Thanks for helping make AI coding projects more sustainable.
 
 ## What Belongs Here
 

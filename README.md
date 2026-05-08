@@ -1,6 +1,6 @@
 # Vibe Harness
 
-**Vibe coding starts projects. Vibe Harness keeps them alive.**
+**A lightweight repository harness for AI coding projects.**
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
@@ -10,13 +10,13 @@
 
 ![Vibe Harness social card](assets/vibe-harness-card.svg)
 
-Vibe Harness is a portable AI coding skill that turns a human project plan into the minimal repo context, state board, verification loops, and collaboration rules that let agents keep working across sessions.
+Vibe Harness is a portable AI coding skill that turns a human project plan into durable repo context, progress tracking, verification loops, and handoff rules so AI coding work can continue across sessions, agents, and tools.
 
 > Give agents a runway, not a cage.
 
-## The Pain
+## The Problem
 
-Vibe coding is fast until the project has memory.
+AI coding is fast until the project needs memory, verification, and handoff.
 
 | Before | After Vibe Harness |
 | --- | --- |
@@ -25,6 +25,20 @@ Vibe coding is fast until the project has memory.
 | Nobody knows what was verified. | `progress.md` records current state and evidence. |
 | Multi-agent work causes file conflicts. | Work slices and handoff rules define safe parallelism. |
 | Docs grow into a stale manual. | The harness stays lightweight and evidence-based. |
+
+Vibe coding is one visible version of this problem. The deeper need is broader: any AI-coded project that survives past the first session needs a small project memory layer.
+
+## Not Just Vibe Coding
+
+Use Vibe Harness for:
+
+- quick prototypes that need to become maintainable
+- production apps built with coding agents
+- team repos using async PR agents
+- personal projects you will resume weeks later
+- multi-agent work where context and ownership can drift
+
+If an AI coding project will be touched again, handed off, verified, or resumed, it can use a harness.
 
 ## Works With
 
@@ -150,6 +164,8 @@ Use Vibe Harness to refresh AGENTS.md and docs/index.md after this refactor. Gro
 
 Agentic coding is moving from single prompts to long-running work. The useful pattern is no longer "write a better mega-prompt"; it is giving agents the right repo-local context, verification paths, and handoff surfaces.
 
+Vibe coding is the sharpest entry point because it exposes the failure quickly, but the harness is for the wider category: AI-assisted engineering, async coding agents, multi-session implementation, and multi-agent collaboration.
+
 Vibe Harness is inspired by the current harness/context engineering direction across coding-agent tools:
 
 - One influential Codex case study describes `AGENTS.md` as a short map, with deeper knowledge living in structured repo docs: [Harness engineering](https://openai.com/index/harness-engineering/).
@@ -199,9 +215,9 @@ Want to help it spread? Use the copy in [`docs/promotion-kit.md`](docs/promotion
 Short version:
 
 ```text
-Vibe coding starts projects. Vibe Harness keeps them alive.
+AI coding moves fast. Vibe Harness keeps projects coherent.
 
-It turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+It turns project plans into lightweight agent-ready repos for AI coding: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
 ```
 
 ## Contributing

@@ -6,7 +6,7 @@ Use this guide when the user wants the skill to be shared, published, or positio
 
 Primary line:
 
-> Sustainable vibe coding starts with a harness.
+> Sustainable AI coding starts with a harness.
 
 One-sentence pitch:
 
@@ -21,7 +21,7 @@ Short tagline:
 Serve people who:
 
 - use Codex, Claude Code, Cursor, Copilot, Gemini, or similar coding agents
-- start projects with vibe coding but lose continuity later
+- start AI coding projects quickly but lose continuity later
 - want agent collaboration without heavyweight process
 - need `AGENTS.md` and docs that stay useful
 - care about tests, evidence, and handoffs but dislike bureaucracy
@@ -50,7 +50,7 @@ Avoid overclaiming:
 
 Lead with:
 
-1. problem: vibe coding starts fast but context decays
+1. problem: AI coding starts fast but context decays
 2. solution: convert project plans into lightweight harnesses
 3. quick start prompt
 4. what it creates
@@ -74,9 +74,9 @@ Good first channels:
 Short post:
 
 ```text
-Vibe coding is great at starting projects. It is bad at remembering why the project exists three sessions later.
+AI coding is great at moving fast. It is bad at remembering why the project exists three sessions later if the context only lives in chat history.
 
-I built Vibe Harness: a skill that turns a project plan into a lightweight agent-ready repo: AGENTS.md, docs/index.md, progress.md, validation loops, and multi-agent handoff rules.
+I built Vibe Harness: a skill that turns a project plan into a lightweight repo harness for AI coding: AGENTS.md, docs/index.md, progress.md, validation loops, and multi-agent handoff rules.
 
 Give agents a runway, not a cage.
 ```

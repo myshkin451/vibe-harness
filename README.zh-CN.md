@@ -1,6 +1,6 @@
 # Vibe Harness
 
-**Vibe coding 负责启动项目，Vibe Harness 负责让项目活下去。**
+**面向 AI coding 项目的轻量 repo harness。**
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
@@ -10,13 +10,13 @@
 
 ![Vibe Harness social card](assets/vibe-harness-card.svg)
 
-Vibe Harness 是一个可移植的 AI coding skill。它把人的项目规划转译成最小可用的 repo 上下文、状态板、验证闭环和协作规则，让各种 coding agents 可以跨 session 持续工作。
+Vibe Harness 是一个可移植的 AI coding skill。它把人的项目规划转译成可持续的 repo 上下文、进度状态、验证闭环和交接规则，让 AI coding 工作可以跨 session、跨 agent、跨工具继续推进。
 
 > 给 agent 跑道，不是给它枷锁。
 
 ## 痛点
 
-Vibe coding 的开头很爽，但项目一旦需要记忆，就会开始变脆。
+AI coding 一开始很快，但项目一旦需要记忆、验证和交接，就会开始变脆。
 
 | 之前 | 使用 Vibe Harness 之后 |
 | --- | --- |
@@ -25,6 +25,20 @@ Vibe coding 的开头很爽，但项目一旦需要记忆，就会开始变脆�
 | 没人知道到底验证过什么。 | `progress.md` 记录当前状态和证据。 |
 | 多 agent 容易改到同一片文件。 | 工作切片和交接规则定义安全并行。 |
 | 文档变成没人维护的长说明书。 | harness 保持轻量、基于证据。 |
+
+Vibe coding 只是这个问题最显眼的一种形态。更底层的需求更宽：任何 AI-coded 项目只要不止一个 session，就需要一个小而稳的项目记忆层。
+
+## 不只适用于 Vibe Coding
+
+这些场景都可以用 Vibe Harness：
+
+- 想从原型走向可维护的小项目
+- 用 coding agents 开发的生产级应用
+- 团队 repo 里的异步 PR agents
+- 过几周还要继续维护的个人项目
+- 容易发生上下文漂移和文件冲突的多 agent 工作
+
+只要一个 AI coding 项目未来还会被继续修改、交接、验证或恢复上下文，它就值得有一个 harness。
 
 ## 兼容哪些 Agent
 
@@ -148,6 +162,8 @@ Use Vibe Harness to refresh AGENTS.md and docs/index.md after this refactor. Gro
 
 Agentic coding 正在从单次 prompt 走向长时间工作。真正有用的模式不再是写一个更长的 mega-prompt，而是给 agent 正确的 repo-local context、验证路径和交接界面。
 
+Vibe coding 是最容易理解的入口，因为它会很快暴露上下文丢失问题；但这个 harness 面向的是更大的类别：AI-assisted engineering、异步 coding agents、多 session 实现和多 agent 协作。
+
 Vibe Harness 受当前跨 coding-agent 工具的 harness/context engineering 趋势启发：
 
 - 一个有影响力的 Codex 案例把 `AGENTS.md` 描述为短地图，深层知识放在结构化 repo docs 中：[Harness engineering](https://openai.com/index/harness-engineering/)。
@@ -180,9 +196,9 @@ python3 scripts/validate.py
 短版：
 
 ```text
-Vibe coding starts projects. Vibe Harness keeps them alive.
+AI coding moves fast. Vibe Harness keeps projects coherent.
 
-It turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+It turns project plans into lightweight agent-ready repos for AI coding: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
 ```
 
 ## 贡献

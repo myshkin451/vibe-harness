@@ -22,7 +22,7 @@ Open an empty or throwaway repo with Vibe Harness installed.
 
 Say:
 
-> Vibe coding is great at starting projects, but three sessions later the agent no longer knows what matters, what was verified, or where to continue.
+> AI coding is great at moving fast, but three sessions later the agent often no longer knows what matters, what was verified, or where to continue.
 
 Show a plain project plan. Point out that it has product intent, risks, and human-only decisions, but no durable agent workflow.
 
@@ -63,7 +63,7 @@ Say:
 
 Say:
 
-> Give agents a runway, not a cage. Vibe coding starts projects; Vibe Harness keeps them alive.
+> Give agents a runway, not a cage. AI coding moves fast; Vibe Harness keeps projects coherent.
 
 Show the install command and GitHub URL.
 

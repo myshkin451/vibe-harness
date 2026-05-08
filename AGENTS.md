@@ -10,7 +10,7 @@
 
 ## Project Goal
 
-Vibe Harness turns a human project plan into a lightweight agent-ready repository harness for sustainable vibe coding.
+Vibe Harness turns a human project plan into a lightweight agent-ready repository harness for sustainable AI coding.
 
 ## Working Rules
 

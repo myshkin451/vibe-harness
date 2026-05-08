@@ -4,7 +4,7 @@ This file turns the project into something people can understand, try, and share
 
 ## Category
 
-Vibe Harness is a skill for agent-ready project initialization. It sits between a project plan and an implementation repo.
+Vibe Harness is a lightweight repository harness for AI coding projects. It sits between a project plan and an implementation repo.
 
 It is not:
 
@@ -18,7 +18,7 @@ It is not:
 
 Primary line:
 
-> Sustainable vibe coding starts with a harness.
+> Sustainable AI coding starts with a harness.
 
 Tagline:
 
@@ -26,7 +26,7 @@ Tagline:
 
 One-sentence pitch:
 
-> Vibe Harness turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+> Vibe Harness turns project plans into lightweight agent-ready repos for AI coding: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
 
 Compatibility line:
 
@@ -42,6 +42,7 @@ The pain is common:
 - multi-agent work creates file conflicts
 - validation is unclear
 - users do not want enterprise process for a side project
+- "vibe coding" is a memorable entry point, but the continuity problem applies to any AI-assisted project that spans sessions, agents, or tools
 
 The project wins if the first use feels like relief: "I can finally start future projects without re-explaining the same operating model."
 
@@ -77,9 +78,9 @@ Use `docs/demo-script.md` for the three-minute version.
 ## First Launch Post
 
 ```text
-Vibe coding is great at starting projects. It is bad at remembering why the project exists three sessions later.
+AI coding is great at moving fast. It is bad at remembering why the project exists three sessions later if the context only lives in chat history.
 
-I built Vibe Harness: a skill that turns a project plan into a lightweight agent-ready repo: AGENTS.md, docs/index.md, progress.md, validation loops, and multi-agent handoff rules.
+I built Vibe Harness: a skill that turns a project plan into a lightweight repo harness for AI coding: AGENTS.md, docs/index.md, progress.md, validation loops, and multi-agent handoff rules.
 
 Give agents a runway, not a cage.
 ```

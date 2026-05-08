@@ -5,21 +5,21 @@ Copy, adapt, and post these when launching or sharing Vibe Harness.
 ## One-Liner
 
 ```text
-Vibe coding starts projects. Vibe Harness keeps them alive.
+AI coding moves fast. Vibe Harness keeps projects coherent.
 ```
 
 ## Short Pitch
 
 ```text
-Vibe Harness turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+Vibe Harness turns project plans into lightweight agent-ready repos for AI coding: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
 ```
 
 ## Long Pitch
 
 ```text
-Vibe coding is great at starting projects. It is bad at remembering why the project exists three sessions later.
+AI coding is great at moving fast. It gets fragile when project intent, verification state, and handoff context live only in chat history.
 
-Vibe Harness is a skill that turns a project plan into a lightweight agent-ready repo: AGENTS.md as the map, docs/index.md as the context router, progress.md as the state board, plus honest verification loops and multi-agent handoff rules.
+Vibe Harness is a portable skill that turns a project plan into a lightweight agent-ready repo: AGENTS.md as the map, docs/index.md as the context router, progress.md as the state board, plus honest verification loops and multi-agent handoff rules.
 
 Give agents a runway, not a cage.
 ```
@@ -27,9 +27,9 @@ Give agents a runway, not a cage.
 ## 中文短版
 
 ```text
-Vibe coding 负责启动项目，Vibe Harness 负责让项目活下去。
+AI coding 跑得很快，Vibe Harness 让项目不散。
 
-它把项目规划转译成轻量的 agent-ready repo：AGENTS.md、docs/index.md、progress.md、验证闭环和多 agent 交接规则。
+它把项目规划转译成面向 AI coding 的轻量 agent-ready repo：AGENTS.md、docs/index.md、progress.md、验证闭环和多 agent 交接规则。
 ```
 
 ## X / LinkedIn Post
@@ -42,13 +42,13 @@ Session 4: "wait, why did we choose this?"
 
 So I built Vibe Harness.
 
-It turns a project plan into a lightweight agent-ready repo:
+It turns a project plan into a lightweight repo harness for AI coding:
 - AGENTS.md as the map
 - docs/index.md as the context router
 - progress.md as the state board
 - verification and handoff rules
 
-Vibe coding starts projects. Vibe Harness keeps them alive.
+AI coding moves fast. Vibe Harness keeps projects coherent.
 
 https://github.com/myshkin451/vibe-harness
 ```
@@ -58,7 +58,7 @@ https://github.com/myshkin451/vibe-harness
 Title:
 
 ```text
-Show HN: Vibe Harness – turn project plans into agent-ready repos
+Show HN: Vibe Harness – a lightweight repo harness for AI coding projects
 ```
 
 Body:
@@ -66,7 +66,7 @@ Body:
 ```text
 I built a small portable skill for people using Codex, Claude Code, Cursor, Copilot, Gemini, or similar coding agents across multiple sessions.
 
-The pain: vibe coding starts fast, but project intent, validation state, and handoff context decay quickly.
+The pain: AI coding starts fast, but project intent, validation state, and handoff context decay quickly once work spans multiple sessions or agents. Vibe coding is one common version of the problem, but not the only one.
 
 Vibe Harness takes a project plan and helps an agent create the smallest useful repo harness: AGENTS.md, docs/index.md, progress.md, verification paths, and multi-agent handoff rules.
 
@@ -92,7 +92,7 @@ Would love feedback from people who use Codex / Claude Code / Cursor / Copilot /
 ```text
 我做了一个小工具/skill：Vibe Harness。
 
-它解决的是 vibe coding 后半段的问题：项目一开始很快，但多 session 之后，agent 不知道项目为什么这样设计、验证过什么、下一步从哪接。
+它解决的是 AI coding 项目的连续性问题：项目一开始很快，但多 session 之后，agent 不知道项目为什么这样设计、验证过什么、下一步从哪接。Vibe coding 是这个问题的一种典型场景，但不是唯一场景。
 
 Vibe Harness 会把项目规划转成轻量 repo harness：
 - AGENTS.md：给 agent 的短地图
@@ -106,7 +106,7 @@ Vibe Harness 会把项目规划转成轻量 repo harness：
 ## Demo Prompt
 
 ```text
-Use $vibe-harness with examples/project-plan.md. Create the Seed harness only: AGENTS.md, docs/index.md, and progress.md. Keep unknowns explicit.
+Read skills/vibe-harness/SKILL.md and use it with examples/project-plan.md. Create the Seed harness only: AGENTS.md, docs/index.md, and progress.md. Keep unknowns explicit.
 ```
 
 ## Places To Share

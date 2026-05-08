@@ -1,6 +1,6 @@
 ---
 name: vibe-harness
-description: Turn a human project plan into a lightweight agent-ready repository harness for sustainable vibe coding. Use when bootstrapping a new project, retrofitting an existing repo for AI coding agents, creating or refreshing AGENTS.md/docs/index.md/progress.md, diagnosing context loss across sessions, designing verification loops, or coordinating multiple agents without heavyweight governance.
+description: Turn a human project plan into a lightweight agent-ready repository harness for sustainable AI coding. Use when bootstrapping a new project, retrofitting an existing repo for AI coding agents, creating or refreshing AGENTS.md/docs/index.md/progress.md, diagnosing context loss across sessions, designing verification loops, or coordinating multiple agents without heavyweight governance.
 ---
 
 # Vibe Harness
@@ -20,7 +20,7 @@ Use this skill when the user wants to:
 - create or refresh `AGENTS.md`, `docs/index.md`, `progress.md`, execution plans, or decision records
 - fix repeated agent failures caused by stale context, weak verification, unclear ownership, or long-session handoff loss
 - coordinate multiple agents or sessions without building a heavy governance system
-- turn vibe coding into a maintainable workflow
+- turn AI coding into a maintainable workflow, from vibe-coded prototypes to structured product work
 
 Do not use this for a tiny one-off code edit in a repo that already has clear instructions and validation.
 
