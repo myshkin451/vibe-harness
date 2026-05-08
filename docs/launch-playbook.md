@@ -12,6 +12,7 @@ It is not:
 - a multi-agent roleplay system
 - a giant governance template
 - a replacement for product judgment
+- a Codex-only package
 
 ## Core Message
 
@@ -26,6 +27,10 @@ Tagline:
 One-sentence pitch:
 
 > Vibe Harness turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+
+Compatibility line:
+
+> Works with Codex, Claude Code, Cursor, Copilot, Gemini, and any coding agent that can read Markdown instructions.
 
 ## Why It Can Spread
 
@@ -59,6 +64,9 @@ Use `docs/demo-script.md` for the three-minute version.
 - `ai-agents`
 - `codex`
 - `claude-code`
+- `cursor`
+- `github-copilot`
+- `gemini-cli`
 - `vibe-coding`
 - `agents-md`
 - `context-engineering`
@@ -82,6 +90,8 @@ More launch copy lives in `docs/promotion-kit.md`.
 
 - README explains the pain in the first screen
 - README has English and Chinese entry points
+- README explains platform-neutral usage
+- compatibility docs exist
 - install instructions work locally
 - `python3 scripts/validate.py` passes
 - example project plan exists

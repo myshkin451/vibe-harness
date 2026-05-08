@@ -36,12 +36,14 @@ Emphasize:
 - honest verification paths
 - multi-session and multi-agent continuity
 - model freedom inside clear boundaries
+- portable Markdown usage instead of platform lock-in
 
 Avoid overclaiming:
 
 - no fake benchmark numbers
 - no claims of fully autonomous engineering
 - no promise that every agent will auto-trigger the skill
+- no Codex-only framing
 - no "replace engineers" framing
 
 ## README Shape
@@ -60,7 +62,7 @@ Lead with:
 
 Good first channels:
 
-- GitHub README and topics: `ai-agents`, `codex`, `claude-code`, `vibe-coding`, `agents-md`, `context-engineering`, `harness-engineering`
+- GitHub README and topics: `ai-agents`, `codex`, `claude-code`, `cursor`, `github-copilot`, `gemini-cli`, `vibe-coding`, `agents-md`, `context-engineering`, `harness-engineering`, `agent-ready`
 - X/LinkedIn post with the tagline and a concrete before/after
 - Hacker News "Show HN" once the example and validation are solid
 - Reddit communities focused on AI coding and agent workflows
@@ -85,6 +87,7 @@ For bilingual launch copy, demo prompts, community posts, and Show HN text, see 
 
 - README explains the pain in the first screen
 - README has language links if the project is intended for bilingual adoption
+- README has a compatibility section if the project should spread beyond one agent tool
 - installation works for at least Codex and Claude Code style skill folders
 - `scripts/validate.py` passes
 - example project plan exists

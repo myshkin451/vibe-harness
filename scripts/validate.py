@@ -17,6 +17,7 @@ REQUIRED_FILES = [
     "AGENTS.md",
     "CONTRIBUTING.md",
     "assets/vibe-harness-card.svg",
+    "docs/compatibility.md",
     "docs/demo-script.md",
     "docs/launch-playbook.md",
     "docs/promotion-kit.md",

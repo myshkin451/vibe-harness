@@ -10,7 +10,7 @@
 
 ![Vibe Harness social card](assets/vibe-harness-card.svg)
 
-Vibe Harness is an AI coding skill that turns a human project plan into the minimal repo context, state board, verification loops, and collaboration rules that let agents keep working across sessions.
+Vibe Harness is a portable AI coding skill that turns a human project plan into the minimal repo context, state board, verification loops, and collaboration rules that let agents keep working across sessions.
 
 > Give agents a runway, not a cage.
 
@@ -26,31 +26,62 @@ Vibe coding is fast until the project has memory.
 | Multi-agent work causes file conflicts. | Work slices and handoff rules define safe parallelism. |
 | Docs grow into a stale manual. | The harness stays lightweight and evidence-based. |
 
+## Works With
+
+Vibe Harness is platform-neutral Markdown. Native skill loading varies by product, but the minimum integration is always:
+
+```text
+Read skills/vibe-harness/SKILL.md and use it to turn this project plan into the lightest useful agent-ready harness.
+```
+
+| Agent / Tool | Best Use | Invocation |
+| --- | --- | --- |
+| Codex | Native skill folder | `Use $vibe-harness ...` |
+| Claude Code | Native skill folder | `Use the vibe-harness skill ...` |
+| Cursor | Project rule or explicit prompt | `Read skills/vibe-harness/SKILL.md ...` |
+| GitHub Copilot Coding Agent | Repo instructions plus explicit prompt | Reference `SKILL.md` from the task |
+| Gemini CLI / other coding agents | Portable instruction package | Ask the agent to read `SKILL.md` |
+
+Auto-invocation is platform-specific. The skill itself is just Markdown plus templates, so it remains usable anywhere an agent can read files.
+
+See [`docs/compatibility.md`](docs/compatibility.md) for details.
+
 ## Quick Start
 
-Install the skill:
+Clone the repo:
 
 ```bash
 git clone https://github.com/myshkin451/vibe-harness.git
 cd vibe-harness
+```
+
+Use directly with any file-reading coding agent:
+
+```text
+Read skills/vibe-harness/SKILL.md and use it with docs/project-plan.md to initialize the lightest useful agent-ready harness for this repo.
+```
+
+Optional native install for Codex:
+
+```bash
 mkdir -p ~/.codex/skills
 cp -R skills/vibe-harness ~/.codex/skills/vibe-harness
 ```
 
-Use it in any project:
+Then invoke:
 
 ```text
 Use $vibe-harness with docs/project-plan.md to initialize the lightest useful agent-ready harness for this repo.
 ```
 
-For Claude Code-style skill folders:
+Optional native install for Claude Code-style skill folders:
 
 ```bash
 mkdir -p ~/.claude/skills
 cp -R skills/vibe-harness ~/.claude/skills/vibe-harness
 ```
 
-For other coding agents, point them at:
+For Cursor, Copilot Coding Agent, Gemini CLI, or any other coding agent, point the agent at:
 
 ```text
 skills/vibe-harness/SKILL.md
@@ -79,7 +110,7 @@ Start with the tiny demo:
 Try the example prompt:
 
 ```text
-Use $vibe-harness with examples/project-plan.md. Create the Seed harness only: AGENTS.md, docs/index.md, and progress.md. Keep unknowns explicit.
+Read skills/vibe-harness/SKILL.md and use it with examples/project-plan.md. Create the Seed harness only: AGENTS.md, docs/index.md, and progress.md. Keep unknowns explicit.
 ```
 
 ## Example Project Types
@@ -104,25 +135,25 @@ Default to Seed. Grow only when the project earns it.
 ## Example Prompts
 
 ```text
-Use $vibe-harness. I have a project plan in docs/project-plan.md. Create only the minimal docs needed so future agents can continue the project safely.
+Read skills/vibe-harness/SKILL.md. I have a project plan in docs/project-plan.md. Create only the minimal docs needed so future agents can continue the project safely.
 ```
 
 ```text
-Use $vibe-harness to diagnose why agents keep losing context in this repo. Do not add heavy process; find the smallest harness fixes.
+Use Vibe Harness to diagnose why agents keep losing context in this repo. Do not add heavy process; find the smallest harness fixes.
 ```
 
 ```text
-Use $vibe-harness to refresh AGENTS.md and docs/index.md after this refactor. Ground every claim in current repo evidence.
+Use Vibe Harness to refresh AGENTS.md and docs/index.md after this refactor. Ground every claim in current repo evidence.
 ```
 
 ## Why This Exists Now
 
 Agentic coding is moving from single prompts to long-running work. The useful pattern is no longer "write a better mega-prompt"; it is giving agents the right repo-local context, verification paths, and handoff surfaces.
 
-Vibe Harness is inspired by the current harness/context engineering direction:
+Vibe Harness is inspired by the current harness/context engineering direction across coding-agent tools:
 
-- OpenAI's Codex team describes `AGENTS.md` as a short map, with deeper knowledge living in structured repo docs: [Harness engineering](https://openai.com/index/harness-engineering/).
-- OpenAI's Codex launch notes emphasize configured dev environments, reliable tests, clear docs, terminal logs, and test evidence: [Introducing Codex](https://openai.com/index/introducing-codex/).
+- One influential Codex case study describes `AGENTS.md` as a short map, with deeper knowledge living in structured repo docs: [Harness engineering](https://openai.com/index/harness-engineering/).
+- Modern coding-agent workflows increasingly emphasize configured dev environments, reliable tests, clear docs, terminal logs, and test evidence: [Introducing Codex](https://openai.com/index/introducing-codex/).
 - Context engineering frames reliability as giving the model the right information and tools at the right step: [Context Engineering for Agents](https://www.langchain.com/blog/context-engineering-for-agents).
 
 This project is not affiliated with Harness.io. It uses "harness" in the agent-engineering sense: the scaffolding that lets agents do reliable work.

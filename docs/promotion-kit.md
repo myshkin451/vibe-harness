@@ -64,7 +64,7 @@ Show HN: Vibe Harness – turn project plans into agent-ready repos
 Body:
 
 ```text
-I built a small skill for people using Codex, Claude Code, Cursor, or similar coding agents across multiple sessions.
+I built a small portable skill for people using Codex, Claude Code, Cursor, Copilot, Gemini, or similar coding agents across multiple sessions.
 
 The pain: vibe coding starts fast, but project intent, validation state, and handoff context decay quickly.
 
@@ -84,7 +84,7 @@ Instead of a giant governance template, it creates the smallest useful harness:
 - progress.md: current state and evidence
 - optional plans/decisions only when needed
 
-Would love feedback from people who use Codex / Claude Code / Cursor on projects that span multiple sessions.
+Would love feedback from people who use Codex / Claude Code / Cursor / Copilot / Gemini on projects that span multiple sessions.
 ```
 
 ## Chinese Community Post
@@ -114,9 +114,9 @@ Use $vibe-harness with examples/project-plan.md. Create the Seed harness only: A
 - GitHub profile pinned repo
 - X / LinkedIn
 - Hacker News Show HN
-- Reddit: AI coding, Claude Code, Cursor, local-first or indie hacker communities
+- Reddit: AI coding, Claude Code, Cursor, Copilot, local-first or indie hacker communities
 - Chinese communities: 即刻, V2EX, 少数派评论区, AI coding groups
-- Awesome lists around harness engineering, AGENTS.md, AI agents, Codex, Claude Code
+- Awesome lists around harness engineering, AGENTS.md, AI agents, portable skills, Codex, Claude Code, Cursor, and Copilot
 
 ## What To Ask For
 
