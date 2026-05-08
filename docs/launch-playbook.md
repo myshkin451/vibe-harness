@@ -52,6 +52,8 @@ Show a small project plan becoming:
 
 Keep the demo under five minutes.
 
+Use `docs/demo-script.md` for the three-minute version.
+
 ## Suggested GitHub Topics
 
 - `ai-agents`
@@ -74,13 +76,18 @@ I built Vibe Harness: a skill that turns a project plan into a lightweight agent
 Give agents a runway, not a cage.
 ```
 
+More launch copy lives in `docs/promotion-kit.md`.
+
 ## Launch Checklist
 
 - README explains the pain in the first screen
+- README has English and Chinese entry points
 - install instructions work locally
 - `python3 scripts/validate.py` passes
 - example project plan exists
 - example output exists
+- demo script exists
+- promotion kit exists
 - first release tag exists
 - GitHub topics are set
 - a short demo prompt is pinned in the README or release notes

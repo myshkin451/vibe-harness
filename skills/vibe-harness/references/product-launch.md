@@ -79,13 +79,18 @@ I built Vibe Harness: a skill that turns a project plan into a lightweight agent
 Give agents a runway, not a cage.
 ```
 
+For bilingual launch copy, demo prompts, community posts, and Show HN text, see the repository-level `docs/promotion-kit.md` if it exists.
+
 ## Release Checklist
 
 - README explains the pain in the first screen
+- README has language links if the project is intended for bilingual adoption
 - installation works for at least Codex and Claude Code style skill folders
 - `scripts/validate.py` passes
 - example project plan exists
 - example output exists
+- demo script exists
+- share copy exists
 - license is present
 - contribution rules explain what "lightweight" means
 - first GitHub release has a changelog and a demo prompt

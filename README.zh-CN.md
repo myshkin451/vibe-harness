@@ -1,0 +1,170 @@
+# Vibe Harness
+
+**Vibe coding 负责启动项目，Vibe Harness 负责让项目活下去。**
+
+[English](README.md) | [简体中文](README.zh-CN.md)
+
+[![Validate](https://github.com/myshkin451/vibe-harness/actions/workflows/validate.yml/badge.svg)](https://github.com/myshkin451/vibe-harness/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/myshkin451/vibe-harness)](https://github.com/myshkin451/vibe-harness/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+![Vibe Harness social card](assets/vibe-harness-card.svg)
+
+Vibe Harness 是一个 AI coding skill。它把人的项目规划转译成最小可用的 repo 上下文、状态板、验证闭环和协作规则，让 Codex、Claude Code、Cursor 等 coding agents 可以跨 session 持续工作。
+
+> 给 agent 跑道，不是给它枷锁。
+
+## 痛点
+
+Vibe coding 的开头很爽，但项目一旦需要记忆，就会开始变脆。
+
+| 之前 | 使用 Vibe Harness 之后 |
+| --- | --- |
+| 每个新 session 都要重新解释项目。 | `AGENTS.md` 给 agent 一张短地图。 |
+| 产品意图只存在聊天记录里。 | `docs/index.md` 路由长期项目上下文。 |
+| 没人知道到底验证过什么。 | `progress.md` 记录当前状态和证据。 |
+| 多 agent 容易改到同一片文件。 | 工作切片和交接规则定义安全并行。 |
+| 文档变成没人维护的长说明书。 | harness 保持轻量、基于证据。 |
+
+## 快速开始
+
+安装 skill：
+
+```bash
+git clone https://github.com/myshkin451/vibe-harness.git
+cd vibe-harness
+mkdir -p ~/.codex/skills
+cp -R skills/vibe-harness ~/.codex/skills/vibe-harness
+```
+
+在你的项目里这样调用：
+
+```text
+Use $vibe-harness with docs/project-plan.md to initialize the lightest useful agent-ready harness for this repo.
+```
+
+如果你使用 Claude Code 风格的 skill 目录：
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R skills/vibe-harness ~/.claude/skills/vibe-harness
+```
+
+其他 coding agent 可以直接读取：
+
+```text
+skills/vibe-harness/SKILL.md
+```
+
+## 它会创建什么
+
+Vibe Harness 会帮助 agent 只创建项目当前真正需要的东西：
+
+- `AGENTS.md`：给 coding agents 的短入口地图
+- `docs/index.md`：长期上下文的索引和路由
+- `progress.md`：跨 session 的高信号状态板
+- 可选 `docs/architecture.md`：当项目边界真的重要时再创建
+- 可选 `docs/exec-plans/`：用于长任务或多 agent 协作
+- 可选 `docs/decisions/`：记录会影响未来实现的决策
+- 诚实的验证路径：命令、浏览器/API/日志证据、CI，或者明确写出当前缺口
+
+## 看一个最小示例
+
+- 输入规划：[`examples/project-plan.md`](examples/project-plan.md)
+- 预期 harness：[`examples/expected-harness/`](examples/expected-harness/)
+- 3 分钟 demo 脚本：[`docs/demo-script.md`](docs/demo-script.md)
+
+示例 prompt：
+
+```text
+Use $vibe-harness with examples/project-plan.md. Create the Seed harness only: AGENTS.md, docs/index.md, and progress.md. Keep unknowns explicit.
+```
+
+## 项目类型示例
+
+更多真实项目入口在 [`examples/project-types/`](examples/project-types/)：
+
+- [`personal-site.md`](examples/project-types/personal-site.md)
+- [`saas-tool.md`](examples/project-types/saas-tool.md)
+- [`backend-api.md`](examples/project-types/backend-api.md)
+- [`browser-extension.md`](examples/project-types/browser-extension.md)
+
+## Harness 分层
+
+| 层级 | 适用场景 | 创建内容 |
+| --- | --- | --- |
+| Seed | 新想法、原型、刚建 repo | `AGENTS.md`、`docs/index.md`、`progress.md` |
+| Working | 实现会跨 session 或多 agent | Seed 加 architecture、exec-plan、decision 模板 |
+| Mature | 有真实用户、CI、部署或文档漂移 | Working 加 drift checks、runbooks、cleanup loops |
+
+默认从 Seed 开始。项目真的长大了，再让 harness 长大。
+
+## 常用 Prompt
+
+```text
+Use $vibe-harness. I have a project plan in docs/project-plan.md. Create only the minimal docs needed so future agents can continue the project safely.
+```
+
+```text
+Use $vibe-harness to diagnose why agents keep losing context in this repo. Do not add heavy process; find the smallest harness fixes.
+```
+
+```text
+Use $vibe-harness to refresh AGENTS.md and docs/index.md after this refactor. Ground every claim in current repo evidence.
+```
+
+## 为什么现在需要它
+
+Agentic coding 正在从单次 prompt 走向长时间工作。真正有用的模式不再是写一个更长的 mega-prompt，而是给 agent 正确的 repo-local context、验证路径和交接界面。
+
+Vibe Harness 受当前 harness/context engineering 趋势启发：
+
+- OpenAI Codex 团队把 `AGENTS.md` 描述为短地图，深层知识放在结构化 repo docs 中：[Harness engineering](https://openai.com/index/harness-engineering/)。
+- OpenAI Codex 发布文强调：配置好的开发环境、可靠测试、清晰文档、terminal logs 和测试证据很重要：[Introducing Codex](https://openai.com/index/introducing-codex/)。
+- Context engineering 认为可靠性的关键是：在正确步骤给模型正确的信息和工具：[Context Engineering for Agents](https://www.langchain.com/blog/context-engineering-for-agents)。
+
+本项目和 Harness.io 无关。这里的 harness 指 agent engineering 语境里的脚手架：让 agents 能稳定工作的上下文、约束和反馈系统。
+
+## 设计原则
+
+- 地图，不是手册。
+- 证据，不是仪式。
+- 渐进披露，不是上下文洪水。
+- 重复提醒不如机械检查。
+- 只有工作真的可拆，才加入多 agent 协调。
+- 品味、优先级、密钥、破坏性动作和产品方向，仍然保留人类判断点。
+
+## 校验
+
+```bash
+python3 scripts/validate.py
+```
+
+校验脚本会检查 skill frontmatter、必需文件、本地链接和残留占位符。
+
+## 帮它传播
+
+可以直接使用 [`docs/promotion-kit.md`](docs/promotion-kit.md) 里的中英文文案。
+
+短版：
+
+```text
+Vibe coding starts projects. Vibe Harness keeps them alive.
+
+It turns project plans into lightweight agent-ready repos: AGENTS.md, docs/index.md, progress.md, verification loops, and multi-agent handoff rules.
+```
+
+## 贡献
+
+欢迎贡献，但请保持它轻。先看 [`CONTRIBUTING.md`](CONTRIBUTING.md)。
+
+适合的 first contribution：
+
+- 用一个真实项目规划试用，并提交 before/after harness
+- 补一个具体项目类型示例
+- 改进模板措辞，但不要让模板变长
+- 增加能抓坏链接或 stale commands 的小型 drift check
+
+## License
+
+MIT

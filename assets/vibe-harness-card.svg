@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Vibe Harness</title>
+  <desc id="desc">Vibe coding starts projects. Vibe Harness keeps them alive.</desc>
+  <rect width="1200" height="630" fill="#101418"/>
+  <rect x="52" y="52" width="1096" height="526" rx="28" fill="#161d23" stroke="#2c3844" stroke-width="2"/>
+  <path d="M110 438 C260 348 338 492 482 402 C646 300 742 394 884 306 C966 255 1034 262 1090 287" fill="none" stroke="#6ee7b7" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="110" cy="438" r="10" fill="#6ee7b7"/>
+  <circle cx="482" cy="402" r="10" fill="#6ee7b7"/>
+  <circle cx="884" cy="306" r="10" fill="#6ee7b7"/>
+  <text x="110" y="170" fill="#e8edf2" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="82" font-weight="800">Vibe Harness</text>
+  <text x="114" y="240" fill="#9fb0c0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="500">Vibe coding starts projects. Vibe Harness keeps them alive.</text>
+  <text x="114" y="332" fill="#d7fff0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28" font-weight="650">AGENTS.md + docs/index.md + progress.md + verification loops</text>
+  <text x="114" y="508" fill="#9fb0c0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="26">Give agents a runway, not a cage.</text>
+</svg>
