@@ -11,7 +11,7 @@
 - Created the platform-neutral `vibe-harness` skill package.
 - Added English and Chinese README files.
 - Added compatibility notes for Codex, Claude Code, Cursor, Copilot, Gemini, and other file-reading coding agents.
-- Published GitHub repo and initial releases through `v0.3.0`.
+- Published GitHub repo and releases through `v0.4.0`.
 - Broadened positioning from vibe-coding-only to AI coding projects.
 - Added a static harness audit script.
 
