@@ -75,6 +75,9 @@ Use directly with any file-reading coding agent:
 Read skills/vibe-harness/SKILL.md and use it with docs/project-plan.md to initialize the lightest useful agent-ready harness for this repo.
 ```
 
+Use `docs/project-plan.md` as your own plan path. To try the bundled demo first,
+use `examples/project-plan.md`.
+
 Optional native install for Codex:
 
 ```bash
